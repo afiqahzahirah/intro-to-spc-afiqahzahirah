@@ -184,5 +184,23 @@ The work done $W$ is positive when the system expands against an external pressu
 ::::
 
 ---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Process Capability Analysis: PartLength Distribution
+**Details:**
+- **Machine:** 1
+- **Temperature:** 338K
+- **Pressure:** 200kPa
+- This chart shows the distribution of `PartLength` under the specified conditions.
+- To perform a complete process capability analysis (e.g., Cp, Cpk), please provide the Lower Specification Limit (LSL) and Upper Specification Limit (USL) for `PartLength`.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/distribution_partlength_machine_1_temp_338_pressure_200.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
 # Bibliography
 <div id="refs"></div>
