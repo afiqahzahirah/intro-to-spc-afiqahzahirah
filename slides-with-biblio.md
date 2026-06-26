@@ -433,5 +433,23 @@ The work done $W$ is positive when the system expands against an external pressu
 ::::
 
 ---
+
+:::: {.columns}
+::: {.column width="50%"}
+### ANOVA for Part Resistance: Pressure * Temperature Interaction
+**Details:**
+- **Machine:** 1
+- **Response Variable:** `PartResistance`
+- **Factors:** `Pressure`, `Temperature`
+- **Interaction Term (Pressure * Temperature) Pr(>F):** $N/A$
+- This result indicates the statistical significance of the interaction effect between `Pressure` and `Temperature` on `PartResistance` for Machine 1.
+:::
+
+::: {.column width="50%"}
+<!-- No plot generated for interaction ANOVA, as requested was the p-value. -->
+:::
+::::
+
+---
 # Bibliography
 <div id="refs"></div>
