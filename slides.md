@@ -356,3 +356,21 @@ The work done $W$ is positive when the system expands against an external pressu
 <iframe data-src='media/plots/boxplot_machine_1_partresistance_by_pressure_usl.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Resistance for Machine 1 by Temperature
+**Details:**
+- **Machine:** 1
+- **Upper Specification Limit (USL):** 10 (Lower is better, no LSL)
+- **ANOVA Result (Pr(>F) for Temperature):** 0.2747
+- This boxplot visualizes the distribution of `PartResistance` for `Machine` 1 across different `Temperature` settings, with the USL indicated by a dashed red line.
+- The ANOVA result indicates the statistical significance of `Temperature` on `PartResistance`.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/boxplot_machine_1_partresistance_by_temperature_usl.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
