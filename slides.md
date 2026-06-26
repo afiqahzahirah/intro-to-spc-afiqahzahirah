@@ -338,3 +338,21 @@ The work done $W$ is positive when the system expands against an external pressu
 <iframe data-src='media/plots/boxplot_machine_1_partresistance_by_pressure.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Resistance for Machine 1 by Pressure
+**Details:**
+- **Machine:** 1
+- **Upper Specification Limit (USL):** 10 (Lower is better, no LSL)
+- **ANOVA Result (Pr(>F) for Pressure):** $['0.0398']$
+- This boxplot visualizes the distribution of `PartResistance` for `Machine` 1 across different `Pressure` settings, with the USL indicated by a dashed red line.
+- The ANOVA result indicates the statistical significance of `Pressure` on `PartResistance`.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/boxplot_machine_1_partresistance_by_pressure_usl.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
