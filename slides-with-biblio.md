@@ -364,5 +364,20 @@ The work done $W$ is positive when the system expands against an external pressu
 ::::
 
 ---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Part Resistance for Machine 1 by Pressure
+**Details:**
+- This boxplot visualizes the distribution of `PartResistance` for `Machine` 1 across different `Pressure` settings.
+- It helps to observe the central tendency, spread, and potential outliers of `PartResistance` at each pressure level.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/boxplot_machine_1_partresistance_by_pressure.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
 # Bibliography
 <div id="refs"></div>

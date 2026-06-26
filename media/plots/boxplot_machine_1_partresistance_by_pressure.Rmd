@@ -1,0 +1,35 @@
+library(ggplot2)
+library(plotly)
+library(htmlwidgets)
+
+# Filter data for Machine == 1
+machine_1_data <- X027[X027$Machine == 1, ]
+
+# Convert Pressure to a factor
+machine_1_data$Pressure_f <- as.factor(machine_1_data$Pressure)
+
+# Create the boxplot
+p <- ggplot(machine_1_data, aes(x = Pressure_f, y = PartResistance, fill = Pressure_f)) +
+  geom_boxplot() +
+  labs(
+    title = "Part Resistance by Pressure for Machine 1",
+    x = "Pressure (kPa)",
+    y = "Part Resistance"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 18, face = "bold"),
+    axis.title.x = element_text(size = 18),
+    axis.title.y = element_text(size = 18),
+    axis.text.x = element_text(size = 14),
+    axis.text.y = element_text(size = 14),
+    legend.position = "none",
+    panel.background = element_rect(fill = "white", colour = "white"),
+    plot.background = element_rect(fill = "white", colour = "white")
+  )
+
+# Convert to plotly object
+p_plotly <- ggplotly(p)
+
+# Save the interactive plot as HTML
+saveWidget(p_plotly, "media/plots/boxplot_machine_1_partresistance_by_pressure.html", selfcontained = TRUE)
